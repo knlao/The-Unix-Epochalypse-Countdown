@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Unix Epochalypse Countdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Hind:wght@400;700&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+	<div class="intro">
+		<h1 class="intro__headline">The Unix Epochalypse</h1>
+		<p class="intro__subheadline">Happening In</p>
+		<div class="cd">
+			<div class="cd__unit-group">
+				<div class="cd__unit">
+					<div class="cd__digits">
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+					</div>
+					<div class="cd__unit-label">Year(s)</div>
+				</div>
+				<div class="cd__unit">
+					<div class="cd__digits">
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+					</div>
+					<div class="cd__unit-label">Month(s)</div>
+				</div>
+				<div class="cd__unit">
+					<div class="cd__digits">
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+					</div>
+					<div class="cd__unit-label">Day(s)</div>
+				</div>
+			</div>
+			<div class="cd__unit-group">
+				<div class="cd__unit">
+					<div class="cd__digits">
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+					</div>
+					<div class="cd__unit-label">Hour(s)</div>
+				</div>
+				<div class="cd__unit">
+					<div class="cd__digits">
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+					</div>
+					<div class="cd__unit-label">Minute(s)</div>
+				</div>
+				<div class="cd__unit">
+					<div class="cd__digits">
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+						<div class="cd__digit" data-col>
+							<div data-pos="next">-</div>
+							<div data-pos="prev">-</div>
+						</div>
+					</div>
+					<div class="cd__unit-label">Second(s)</div>
+				</div>
+			</div>
+			<div class="cd__progress">
+				<span class="cd__unit-label">Seconds Since Unix Epoch</span><br>
+				<strong data-progress>-</strong>
+			</div>
+		</div>
+		<button id="info-btn" class="btn" type="button">
+			<span class="btn__text">?</span>
+		</button>
+	</div>
+	<div id="info" class="content">
+		<div class="content__wrap">
+			<h2>What’s the Unix Epochalypse?</h2>
+			<p>The Unix Epochalypse (or the <a href="https://en.wikipedia.org/wiki/Year_2038_problem" target="_blank" ref="noopener noreferrer">Year 2038 problem</a>) will cause the clock on many computers and other electronics to crash, being the result a technical limitation on how computers store the time along with the size of numbers that 32-bit computers can hold, similar to the Year 2000 Problem. Basically, each computer keeps track of time in the UNIX time format. UNIX time is the number of seconds since the 1st of January 1970, which is known as the "epoch". 32-bit variables can hold numbers as big as 2 147 483 647.</p>
+			<p>So once 2,147,483,647 seconds since the epoch has passed, which will be on the 19th of January 2038 at 03:14:07 UTC, the time variable will overflow and revert to -2,147,483,647, causing the computer to think the date is the 13th of December 1901.</p>
+			<p>Since all computers and smartphones made recently are 64-bit, which can hold numbers as big as 9 223,372,036,854,775,807 and their time variable wont overflow until the year 292,277,026,596 (the universe is predicted to not exist by then!). So most consumer devices (except for really old ones) will not be affected. As for other devices (like ATMs, government/military equipment and others), by the year 2038 it is likely that most (if not all) 32-bit devices will no longer be in use because of the impending time overflow, but not for sure.</p>
+		</div>
+	</div>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
